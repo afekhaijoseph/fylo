@@ -1,0 +1,485 @@
+*{
+    box-sizing: border-box;
+}
+
+h3{
+    margin:0;
+}
+
+body{
+    background:hsl(218, 28%, 13%);
+    margin: 0;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Open sans', sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.top{
+    background: hsl(217, 28%, 15%);
+}
+
+header{
+    font-family: 'Raleway', serif;
+    padding: 1.3rem 0;
+    border:1px solid hsl(217, 28%, 15%);
+    width: 90%;
+    margin: auto;
+}
+
+.intro-background{
+    position: relative;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.main-nav__brand{
+    width: 100px;
+    height: auto;
+}
+
+.main-nav__brand img{
+    width: 100%;
+    height: 100%;
+}
+
+.main-nav__items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.main-nav__items li:hover,
+.main-nav__items li:hover{
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.main-nav__items li:last-of-type{
+    min-width: 80px;
+}
+.main-nav__item{
+    padding: 0 1rem;
+}
+
+.intro{
+    width: 100vw;
+    margin: auto;
+    
+}
+
+.intro__illustration{
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    padding: 2rem 0 5.5rem 0;
+}
+
+.background-fix{
+    background:url('images/bg-curvy-mobile.svg');
+    background-repeat:no-repeat;
+    background-position:  bottom 0 left 0;
+    background-size: 100vw;
+}
+
+.intro__container div:nth-of-type(2){
+    background-color: hsl(218, 28%, 13%);
+    margin: 0;
+}
+.intro__illustration img{
+    width: 100%;
+    height: 100%;
+}
+
+.intro p:first-of-type{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.5;
+    z-index:3;
+    margin: 0;
+
+}
+
+.intro p:last-of-type{
+    width: 80%;
+    margin: auto;
+}
+
+.intro button{
+    width: 270px;
+    height: 3rem;
+    margin: 3rem 0;
+    background: linear-gradient(90deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+}
+
+.intro button:hover,
+.intro button:active{
+    cursor: pointer;
+    background: hsl(176, 68%, 64%);
+}
+
+.intro button:focus{
+    outline: none;
+}
+
+.features{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.feature p:first-of-type{
+    font-size: 1.2rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.reason-why{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.reason-why__illustration{
+    width: 85vw;
+    height: auto;
+    margin: 7rem auto 2rem auto;
+
+}
+
+.reason-why__illustration img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.reason-why p{
+    text-align: left;
+}
+
+.reason-why p:first-of-type{
+    font-size: 1.2rem;
+    font-weight: bold;
+    white-space: wrap;
+    text-align: center;
+}
+
+.reason-why p:last-of-type{
+    font-size: 0.9rem;
+    color:hsl(176, 68%, 64%);
+    border-bottom: 2px solid hsl(176, 68%, 64%);
+    padding: 0.5rem 0;
+    width: 50%;
+}
+
+.reason-why p:last-of-type:hover{
+    color:hsl(0, 0%, 100%);
+    border-color: hsl(0, 0%, 100%);
+}
+
+.reason-why p:last-of-type svg:hover{
+    background-color: hsl(0, 0%, 100%);
+}
+
+.reason-why p:last-of-type svg{
+    background:hsl(176, 68%, 64%);
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0 0.2rem;
+}
+
+.quote img{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left:40px;
+    top: 5px;
+    z-index: -2;
+}
+
+.testimonies{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    margin: 10rem auto 20rem auto;
+}
+
+.testimonial-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.testimony{
+    background: hsl(219, 30%, 18%);
+    margin: 1.5rem 2rem;
+    padding: 1rem;
+    font-size: 0.7rem;
+    text-align: left;
+}
+
+.customer-bio img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.customer-bio div{
+    display: inline-block;
+    line-height: 0.5;
+    vertical-align: middle;
+    padding: 0 0.5rem;
+}
+
+.customer-bio div p:first-of-type{
+    font-weight: bold;
+}
+
+.sign-up{
+    background: hsl(217, 28%, 15%);
+    width: 90%;
+    border-radius: 20px;
+    margin: auto;
+    padding: 1rem;
+    position: absolute;
+    bottom: 60rem;
+    left: 5%;
+}
+.sign-up__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sign-up p:first-of-type{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.sign-up input{
+    width: 90%;
+    margin: 1rem auto;
+    height: 3.5rem;
+    border-radius: 50px;
+    padding: 1rem;
+    border: none;
+}
+
+.sign-up button{
+    width: 90%;
+    height: 3.5rem;
+    border-radius: 50px;
+    margin: 1rem auto;
+    border: none;
+    padding: 1.1rem;
+    font-family: 'Open sans', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: hsl(198, 60%, 50%);
+}
+
+.sign-up button:hover,
+.sign-up button:active{
+    background: hsl(176, 68%, 64%);
+    cursor: pointer;
+}
+
+.sign-up button:focus{
+    outline: none;
+}
+
+footer{
+    background: hsl(216, 53%, 9%);
+    padding: 20rem 2rem 2rem 2rem;
+    text-align: left;
+}
+
+.footer__box{
+    display: grid;
+}
+
+.footer__brand{
+    margin: 1.5rem 0;
+}
+
+.info p{
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+}
+
+.info div{
+    display: inline-block;
+    width: 20%;
+    vertical-align: middle;
+}
+
+.socials{
+    margin: 5rem 0 2rem 0;
+    text-align: center;
+}
+
+.socials i{
+    margin: 1rem;
+    border: 1.5px solid #fff;
+    padding: 0.6rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+@media (min-width:40rem){
+    header{
+        padding: 2rem 0;
+    }
+    .main-nav__brand{
+        width: 150px;
+    }
+
+    .main-nav__items{
+        font-size: 0.9rem;
+    }
+
+    .background-fix{
+        background: none;
+    }
+
+    .intro__illustration{
+        width: 40%;
+        padding: 0;
+    }
+
+    .intro{
+        width: 100vw;
+        margin: auto;
+        background:url('images/bg-curvy-desktop.svg');
+        background-repeat:no-repeat;
+        background-position: bottom 0 left 0;
+        background-size: 100vw;
+        position: relative;
+    }
+
+    .intro__container{
+       
+    }
+
+    .intro div:last-of-type{
+        width: 70%;
+        background: none;
+        margin: auto;
+    }
+
+    .features{
+        grid-template-columns: 50% 50%;
+        margin: 0 0 3rem 0;
+        column-gap: 2rem;
+    }
+
+    .feature{
+        width: 70%;
+    }
+
+    .features__accessibility,
+    .features__collaboration{
+        justify-self: end;
+    }
+
+    .features__security,
+    .features__storage{
+        justify-self: start;
+    }
+
+    .reason-why{
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        column-gap: 1rem;
+    }
+
+    .reason-why__illustration,
+    .reason-why div:last-of-type{
+        width: 45%;
+    }
+
+    .reason-why div:last-of-type p:first-of-type{
+        text-align: left;
+    }
+
+    .testimonial-box{
+        flex-direction: row;
+    }
+
+    .quote img{
+        left: 25px;
+    }
+
+    .sign-up{
+        width: 50%;
+        margin: auto;
+        left: 20rem;
+        border-radius: 10px;
+        bottom: 23rem;
+    }
+    
+    .sign-up__box{
+        flex-direction: row;
+    }
+
+    .sign-up input{
+        width: 65%;
+        height: 2.5rem;
+    }
+    .sign-up button{
+        width: 25%;
+        padding:0 0.5rem;
+        height: auto;
+        font-size: 0.9rem;
+    }
+
+    .sign-up p:first-of-type{
+        padding: 0;
+    }
+
+    .sign-up p:last-of-type{
+        font-size: 0.8rem;
+    }
+
+    footer{
+        padding-top: 10rem;
+    }
+
+    .footer__box{
+        grid-template-columns: 35% 20% 10% 10% 25%;
+    }
+
+    .socials{
+        align-self: center;
+    }
+}
